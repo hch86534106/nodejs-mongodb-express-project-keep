@@ -16,45 +16,47 @@ npm install +安装mongodb 并保持启动
 
 npm start
 
+然后把mongodb放在home目录，这个readme图片放不出来，要想看效果就把readme下一下吧
+
 ## 4.数据库设计
 
-![image-20210628062323798](/home/cjh/.config/Typora/typora-user-images/image-20210628062323798.png)
+![image-20210628062323798](./images/image-20210628062323798.png)
 
 用户表
 
-![image-20210628062406607](/home/cjh/.config/Typora/typora-user-images/image-20210628062406607.png)
+![image-20210628062406607](./images/image-20210628062406607.png)
 
 教练表
 
-![image-20210628062457967](/home/cjh/.config/Typora/typora-user-images/image-20210628062457967.png)
+![image-20210628062457967](./images/image-20210628062457967.png)
 
 预约表
 
-![image-20210628062528761](/home/cjh/.config/Typora/typora-user-images/image-20210628062528761.png)
+![image-20210628062528761](./images/image-20210628062528761.png)
 
 新闻表
 
 ## 5.具体页面
 
-![image-20210628062645011](/home/cjh/.config/Typora/typora-user-images/image-20210628062645011.png)
+![image-20210628062645011](./images/image-20210628062645011.png)
 
-![image-20210628062711300](/home/cjh/.config/Typora/typora-user-images/image-20210628062711300.png)
+![image-20210628062711300](./images/image-20210628062711300.png)
 
-![image-20210628062743511](/home/cjh/.config/Typora/typora-user-images/image-20210628062743511.png)
+![image-20210628062743511](./images/image-20210628062743511.png)
 
-![image-20210628062804229](/home/cjh/.config/Typora/typora-user-images/image-20210628062804229.png)
+![image-20210628062804229](./images/image-20210628062804229.png)
 
-![image-20210628062944428](/home/cjh/.config/Typora/typora-user-images/image-20210628062944428.png)
+![image-20210628062944428](./images/image-20210628062944428.png)
 
-![image-20210628063008930](/home/cjh/.config/Typora/typora-user-images/image-20210628063008930.png)
+![image-20210628063008930](./images/image-20210628063008930.png)
 
-![image-20210628063243514](/home/cjh/.config/Typora/typora-user-images/image-20210628063243514.png)
+![image-20210628063243514](./images/image-20210628063243514.png)
 
-![image-20210628063346494](/home/cjh/.config/Typora/typora-user-images/image-20210628063346494.png)
+![image-20210628063346494](./images/image-20210628063346494.png)
 
-![image-20210628063407911](/home/cjh/.config/Typora/typora-user-images/image-20210628063407911.png)
+![image-20210628063407911](./images/image-20210628063407911.png)
 
-![image-20210628063436160](/home/cjh/.config/Typora/typora-user-images/image-20210628063436160.png)
+![image-20210628063436160](./images/image-20210628063436160.png)
 
 ## 6.实现功能
 
