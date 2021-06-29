@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include link %>
+    <%- include head %>
+</head>
+<body>
+    <section class="page-header bg_img" data-background="./assets/images/banner/banner.jpg">
+        <div class="container">
+            <h3 class="title"><span class="shape-wrapper"><span class="shape"></span>活动新闻<span class="shape"></span></span></h3>
+        </div>
+    </section>
+    <!-- Page Header EndsHere -->
+    <!-- Breadcrumb Section Starts Here -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="breadcrumb-wrapper">
+                <div class="breadcrumb-title">
+                    <h6 class="title">活动新闻</h6>
+                </div>
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="/">首页</a>
+                    </li>
+                    <li>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section Ends Here -->
+    <!-- About Section Starts Here -->
+    <section class="about-section padding-top">
+        <div class="container">
+                <% news.forEach(function(ele){%>
+        		<div class="row about-section-wrapper">
+                <div class="col-lg-6">
+                    <div class="about-thumb">
+                        <img src="<%=ele.src%>" alt="infoimg">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content p-0">
+                        <div class="about-section-header">
+                            <h4><%=ele.title%> </h2>
+                            <p><%=ele.content%> </p>
+                            <p><%=ele.coachname%> </p>
+                        </div>
+                    </div>
+                </div>
+            	</div>
+                <% }) %>
+        </div>
+    </section>
+</body>
+</html>

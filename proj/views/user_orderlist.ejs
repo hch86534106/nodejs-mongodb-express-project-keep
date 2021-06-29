@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include link %>
+    <%- include head %>
+</head>
+<body>
+    <section class="page-header bg_img" data-background="./assets/images/banner/banner.jpg">
+        <div class="container">
+            <h3 class="title"><span class="shape-wrapper"><span class="shape"></span>我的预约<span
+                        class="shape"></span></span></h3>
+        </div>
+    </section>
+    <!-- Page Header EndsHere -->
+    <!-- Breadcrumb Section Starts Here -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="breadcrumb-wrapper">
+                <div class="breadcrumb-title">
+                    <h6 class="title">我的预约</h6>
+                </div>
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="/user_info">我的信息</a>
+                    </li>
+                     <li>
+                        <a href="/user_order">锻炼预约</a>
+                    </li>
+                    <li>
+                        <a href="/user_orderlist">我的预约</a>
+                    </li>
+                    <li>
+                        <a href="users/logout">注销</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section Ends Here -->
+    
+    <div class="col-9">
+    	<div class="card"  style="margin-left:400px;">
+					<h5 class="card-header">
+						<font size='4px' color='#1E90FF' style="float: 'center'">预约请求</font>
+						</h5>
+
+					<div class="card-body">
+						
+						<table class="table">
+							<thead class="thead-dark">
+								<tr>
+									<th scope="col">预约号 </th>
+									<th scope="col">预约人 </th>
+									<th scope="col">预约课程</th>
+									<th scope="col">预约场馆</th>
+									<th scope="col">预约教练</th>
+								</tr>
+							</thead>
+							<tbody>
+								<% orders.forEach(function(order){%>
+                                    <tr>
+										<!-- <th scope="row">${order.orderid}</th> -->
+                                        <td><%=order._id%></td>
+                                        <td><%=user.username%></td>
+										<td><%=order.classname%></td>
+										
+										<td><%=order.placename%></td>
+                                        <td><%=order.coachname%></td>
+									</tr>
+                                <% }) %>
+									
+								
+							</tbody>
+						</table>
+
+
+					</div>
+	</div>
+    </div>
+</body>
+</html>

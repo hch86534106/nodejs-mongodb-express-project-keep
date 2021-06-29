@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <%- include link %>
+    <%- include head %>
+</head>
+<body>
+    <section class="page-header bg_img" data-background="./assets/images/banner/banner.jpg">
+        <div class="container">
+            <h3 class="title"><span class="shape-wrapper"><span class="shape"></span>用户信息<span
+                        class="shape"></span></span></h3>
+        </div>
+    </section>
+    <!-- Page Header EndsHere -->
+    <!-- Breadcrumb Section Starts Here -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="breadcrumb-wrapper">
+                <div class="breadcrumb-title">
+                    <h6 class="title">用户信息</h6>
+                </div>
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="/user_info">我的信息</a>
+                    </li>
+                     <li>
+                        <a href="/user_order">锻炼预约</a>
+                    </li>
+                    <li>
+                        <a href="/user_orderlist">我的预约</a>
+                    </li>
+                    <li>
+                        <a href="users/logout">注销</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section Ends Here -->
+    <!-- Four Not Four Section Starts Here -->
+    <section class="login-section padding-bottom padding-top">
+        <div class="container">
+            <div class="login-wrapper">
+                <h3 class="title">我的信息</h3>
+                <form class="login-form" method="post" action="users/Updateuserinfo">
+                    <!-- <p style="color: red">${info}</p>
+                    <p style="color: red">${info1}</p> -->
+                    <div class="form-group">
+                        	用户名：<input type="text" name="username" value="<%=user.username%> ">
+                    </div>
+                    <div class="form-group">
+                        	密码：<input type="password" name="password" value="<%=user.password%>">
+                    </div>
+                    <div class="form-group">
+                        	性别：<input type="text" name="sex" value="<%=user.sex%>">
+                    </div>
+                    <div class="form-group">
+                        	身高：<input type="text" name="height" value="<%=user.height%>">
+                    </div>
+                    <div class="form-group">
+                        	体重：<input type="text" name="weight" value="<%=user.weight%>">
+                    </div>
+                    <div class="form-group">
+                        	手机号码：<input type="text" name="phone" value="<%=user.phone%>">
+                    </div>
+                    
+                    
+                    
+                    <div class="form-group">
+                        <input type="submit" value="信息修改">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

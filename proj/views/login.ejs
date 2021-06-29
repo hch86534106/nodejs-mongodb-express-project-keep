@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <%- include link %>
+    <%- include head %>
+</head>
+<body>
+
+     <!-- <div>
+         <form action ="/users/login" method="post">   
+            <input type="text" name="username" value="" placeholder="请输入用户名">
+            <input type="password" name="password" value="" placeholder="请输入密码">
+            <input type="submit" name=" " value="登录">
+        </form>
+        <div>未有账号,<a href="/regist">立即注册</a></div>
+     </div> -->
+
+     <!-- Page Header Starts Here -->
+    <section class="page-header bg_img" data-background="./assets/images/banner/banner.jpg">
+        <div class="container">
+            <h3 class="title"><span class="shape-wrapper"><span class="shape"></span>登录<span
+                        class="shape"></span></span></h3>
+        </div>
+    </section>
+    <!-- Page Header EndsHere -->
+    <!-- Breadcrumb Section Starts Here -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="breadcrumb-wrapper">
+                <div class="breadcrumb-title">
+                    <h6 class="title">登录</h6>
+                </div>
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="/">首页</a>
+                    </li>
+                    <li>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section Ends Here -->
+    <!-- Four Not Four Section Starts Here -->
+    <section class="login-section padding-bottom padding-top">
+        <div class="container">
+            <div class="login-wrapper">
+                <h3 class="title">登录</h3>
+                <!-- <p style="color: red">${info}</p> -->
+                <form class="login-form" method="post" action="/users/login">
+                    <div class="form-group">
+                        <input type="text" name="username" placeholder="用户名">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" placeholder="密码">
+                    </div>
+
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="role"
+							id="inlineRadio1" value="user"> <label
+							class="form-check-label" for="inlineRadio1">用户</label>
+					</div>
+					<div class="form-check form-check-inline" style="margin-left:15px;">
+						<input class="form-check-input" type="radio" name="role"
+							id="inlineRadio2" value="coach"> <label
+							class="form-check-label" for="inlineRadio2"><p>教练</p></label>
+					</div>
+
+
+					<div class="form-group">
+                        <input type="submit" value="登录">
+                    </div>
+                    
+                    <div class="sign-in-option">
+                        <a href="/regist">没有账号？点击注册</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="/assets/js/modernizr-3.6.0.min.js"></script>
+    <script src="/assets/js/plugins.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/isotope.pkgd.min.js"></script>
+    <script src="/assets/js/swiper.min.js"></script>
+    <script src="/assets/js/waypoint.js"></script>
+    <script src="/assets/js/counterup.min.js"></script>
+    <script src="/assets/js/lightcase.js"></script>
+    <script src="/assets/js/wow.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

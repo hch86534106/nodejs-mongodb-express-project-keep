@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include link %>
+    <%- include head %>
+</head>
+<body>
+    <section class="page-header bg_img"
+		data-background="./assets/images/banner/banner.jpg">
+		<div class="container">
+			<h3 class="title">
+				<span class="shape-wrapper"><span class="shape"></span>新闻发布<span
+					class="shape"></span></span>
+			</h3>
+		</div>
+	</section>
+	<!-- Page Header EndsHere -->
+	<!-- Breadcrumb Section Starts Here -->
+	<div class="breadcrumb-section">
+		<div class="container">
+			<div class="breadcrumb-wrapper">
+				<div class="breadcrumb-title">
+					<h6 class="title">活动新闻</h6>
+				</div>
+				<ul class="breadcrumb">
+					<li>
+                        <a href="/coach_info">我的信息</a>
+                    </li>
+                    <li>
+                        <a href="/coach_news">活动新闻发布</a>
+                    </li>
+                     <li>
+                        <a href="/coach_order">预约处理</a>
+                    </li>
+                     <li>
+                        <a href="/users/logout">注销</a>
+                    </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Breadcrumb Section Ends Here -->
+	<!-- Four Not Four Section Starts Here -->
+	<section class="login-section padding-bottom padding-top">
+		<div class="container">
+			<div class="login-wrapper">
+				<h3 class="title">新闻发布</h3>
+				<form class="login-form" method="post" action="/users/edit_news">
+					<div class="form-group">
+						活动名：<input type="text" name="title">
+					</div>
+					<div class="form-group">
+						活动详情：
+						<p>
+							<textarea row='20' cols='30' name="content"></textarea>
+						</p>
+					</div>
+					<div class="form-group">
+						<input type="submit" value="发布新闻">
+					</div>
+				</form>
+
+
+
+			</div>
+		</div>
+	</section>
+</body>
+</html>

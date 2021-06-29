@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include link %>
+    <%- include head %>
+</head>
+<body>
+    <!-- Page Header Starts Here -->
+    <section class="page-header bg_img" data-background="./assets/images/banner/banner.jpg">
+        <div class="container">
+            <h3 class="title"><span class="shape-wrapper"><span class="shape"></span>课程预约<span
+                        class="shape"></span></span></h3>
+        </div>
+    </section>
+    <!-- Page Header EndsHere -->
+    <!-- Breadcrumb Section Starts Here -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="breadcrumb-wrapper">
+                <div class="breadcrumb-title">
+                    <h6 class="title">预约</h6>
+                </div>
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="/user_info">我的信息</a>
+                    </li>
+                     <li>
+                        <a href="/user_order">锻炼预约</a>
+                    </li>
+                    <li>
+                        <a href="/user_orderlist">我的预约</a>
+                    </li>
+                    <li>
+                        <a href="users/logout">注销</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section Ends Here -->
+    <!-- Four Not Four Section Starts Here -->
+    <section class="login-section padding-bottom padding-top">
+        <div class="container">
+            <div class="login-wrapper">
+                <h3 class="title">预约内容</h3>
+                <form class="login-form" method="post" action="users/user_order">
+					<div class="form-group">
+						用户名：<a disabled><%=user.username%> </a>
+					</div>
+					<div class="form-group">
+						<!-- 下拉列表 -->
+						选择教练:<select name="coachname" style="margin-top: 10px;">
+									<option value="叶奈法">叶奈法</option>
+									<option value="威廉">威廉</option>
+									<option value="爱丽丝">爱丽丝</option>
+									<option value="罗伯特">罗伯特</option>
+									<option value="玛丽">玛丽</option>
+									<option value="道金斯">道金斯</option>
+								</select><br>
+					</div>
+					<div class="form-group">
+						<!-- 下拉列表 -->
+						选择课程:<select name="classname" style="margin-top: 10px;">
+									<option value="有氧器械">有氧器械</option>
+									<option value="组合器械">组合器械</option>
+									<option value="网球">网球</option>
+									<option value="乒乓球">乒乓球</option>
+									<option value="瑜伽">瑜伽</option>
+									<option value="游泳">游泳</option>
+									<option value="桌球">桌球</option>
+									<option value="太极">太极</option>
+									<option value="跆拳道">跆拳道</option>
+								</select><br>
+					</div>
+					<div class="form-group">
+						<!-- 下拉列表 -->
+						选择教练:<select name="placename" style="margin-top: 10px;">
+									<option value="简易健身房">简易健身房（￥15/h）</option>
+									<option value="进阶健身房">进阶健身房（￥30/h）</option>
+									<option value="私人健身房">私人健身房（￥50/h）</option>
+								</select><br>
+					</div>
+
+                    <div class="form-group">
+                        <input type="submit" value="提交预约">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
