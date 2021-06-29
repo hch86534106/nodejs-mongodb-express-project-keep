@@ -16,23 +16,35 @@ npm install +安装mongodb 并保持启动
 
 npm start
 
-然后把mongodb放在home目录，这个readme图片放不出来，要想看效果就把readme下一下吧
+然后把mongodb放在home目录，这个readme图片放不出来,images文件夹就是效果，要想看效果就把clone一下吧
+
+教练 叶奈法 密码123 登录之后再点击注册/登录的按钮就能到信息页面了
+
+用户 黄诚浩 密码 123 同理
 
 ## 4.数据库设计
 
 ![image-20210628062323798](./images/image-20210628062323798.png)
 
+![image-20210628185010162](./images/image-20210628185010162.png)
+
 用户表
 
 ![image-20210628062406607](./images/image-20210628062406607.png)
+
+![image-20210628185044248](./images/image-20210628185044248.png)
 
 教练表
 
 ![image-20210628062457967](./images/image-20210628062457967.png)
 
+![image-20210628185114930](./images/image-20210628185114930.png)
+
 预约表
 
 ![image-20210628062528761](./images/image-20210628062528761.png)
+
+![image-20210628185137413](./images/image-20210628185137413.png)
 
 新闻表
 
